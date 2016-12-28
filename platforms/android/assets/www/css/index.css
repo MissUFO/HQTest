@@ -1,0 +1,469 @@
+﻿@font-face {
+  font-family: 'UniSans-Regular';
+  src: url('../font/UniSans.ttf');
+}
+
+@font-face {
+  font-family: 'UniSans-Light';
+  src: url('../font/UniSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'UniSans-Bold';
+  src: url('../font/UniSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'UniSans-Book';
+  src: url('../font/UniSans-Book.ttf');
+}
+
+@font-face {
+  font-family: 'UniSans-SemiBold';
+  src: url('../font/UniSans-SemiBold.ttf');
+}
+
+html, body {
+    background-color: #386883;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+
+     backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    overflow: hidden;
+    -ms-content-zooming: none;
+    -ms-touch-action:none;
+
+    font-family: 'UniSans-Regular', sans-serif;
+}
+
+.scroll-content {
+    background-color: #386883;
+    background-image: url('../images/bg.png'); 
+    background-size: cover;   
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.clear 
+{
+    clear: both;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+.x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+    display: none;
+}
+
+/* text pages */
+
+.text-content {
+    padding: 2em;
+}
+
+.text-content h1 {
+    color: white;
+    font-size: 1.4em;
+    font-family: 'UniSans-Bold', sans-serif;
+    width: 100%;
+}
+.text-content h2 {
+    color: white;
+    font-size: 1.4em;
+    font-family: 'UniSans-Bold', sans-serif;
+    width: 100%;
+    text-align:center;
+}
+
+.text-content p {
+    color: white;
+    font-size: 1.3em;
+    font-family: 'UniSans-Regular', sans-serif;
+    text-align:justify;
+    padding-top:0.5em;
+}
+
+.text-content .small p {
+    font-size: 1em;
+}
+
+.text-content .small .btn-gray{
+     font-size: 1.2em;
+     padding-top: 0.8em;
+}
+
+.text-content .small .buttons{
+     padding-top:1em;
+}
+
+.text-content .red {
+    color: #fa7a14;/*#ff5a00;*/
+}
+
+.text-content .blue {
+    color: #00fcff;
+}
+
+.text-content .logo-screen-first {
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.text-content .logo-screen-second {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.text-content .logo-screen-first img {
+    width: 90%;
+}
+
+.text-content .logo-screen-second img {
+    width: 80%;
+}
+
+.text-content .buttons {
+    width: 100%;
+    text-align:center;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.text-content .sharing {
+    width: 100%;
+    text-align:center;
+    padding-top: 0em;
+    padding-bottom: 1em;
+}
+
+.btn-small {
+    border-radius: 35px; 
+   -moz-border-radius: 35px; 
+   -webkit-border-radius: 35px; 
+    border: 0px;
+    background-color: #208ea5;
+    color: #FFFFFF;
+    font-size: 0.7em;
+    text-transform:uppercase;
+    font-family: 'UniSans-SemiBold', sans-serif;
+    padding: 1.5em 2.6em 1.3em 2.6em;
+}
+
+/* header */
+.header {
+    width:100%;
+}
+
+.header img {
+    width:100%;
+}
+
+/* question page */
+
+.question-content {
+    padding: 2em;
+}
+
+.question-content h1 {
+    color: #13b8c9;
+    font-size: 1.8em;
+    font-family: 'UniSans-Bold', sans-serif;
+}
+
+.question-content p {
+    color: #fa7a14; /*#fb5a04;*/
+    font-size: 1em;
+    font-family: 'UniSans-Bold', sans-serif;
+    font-weight: bold;
+}
+
+.question-content .answers-item {
+     color: white;
+     font-size: 1.2em;
+     font-family: UniSans-Regular, sans-serif;
+}
+
+.question-content .answers-item label {
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 80%;  
+
+}
+
+.question-content .answers-item .answer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;  
+    border-radius: 25px;
+}
+
+.question-content .answers-item .blue {
+      background-color: #208ea5;
+ }
+
+.answer-radio {
+    vertical-align:middle;    
+    padding: 0.6em 0.3em 0.3em 0.6em;
+    width: 1%;
+}
+.answer-label {
+     padding: 0.6em; 
+     text-align:left;
+}
+
+.question-content .buttons {
+    width: 100%;
+    text-align:center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* result content */
+.result-content {
+      padding: 2em;
+}
+
+.result-content h1 {
+    color: #0ac9d9;
+    font-size: 1.8em;
+    font-family: 'UniSans-Bold', sans-serif;
+    width: 100%;
+}
+.result-content h2 {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'UniSans-Bold', sans-serif;
+    width: 100%;
+}
+
+.result-content p {
+    color: white;
+    font-size: 1em;
+    font-family: 'UniSans-Regular', sans-serif;
+    text-align:justify;
+    padding-top:1em;
+}
+
+.result-content .red {
+    color: #ff5a00;
+}
+
+.result-content .blue {
+    color: #00fcff;
+}
+
+.result-content .buttons {
+    width: 100%;
+    text-align:center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+/* send message form */
+
+.message-content {
+      padding: 2em;
+}
+
+.message-content h1 {
+    color: white;
+    font-size: 1.8em;
+    font-family: 'UniSans-Bold', sans-serif;
+    width: 100%;
+}
+
+.message-content p {
+    color: #0ac9d9;
+    font-size: 1em;
+    font-family: 'UniSans-Regular', sans-serif;
+    text-align:justify;
+    font-style:italic;
+    padding-top:1em;
+    padding-bottom: 1em;
+}
+
+.message-content table {
+    width:100%;
+}
+
+.message-content .label {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'UniSans-Bold', sans-serif;
+    text-transform:uppercase;
+}
+
+.message-content .field {
+    background-color: #a6b9c5;
+    opacity: 0.4;
+    width: 90%;
+    border-radius: 10px;
+    padding: 0 0.5em 0 0.5em;
+    margin-bottom:1em;
+}
+
+.message-content .field input,
+.message-content .field textarea {
+    border:0px;
+    background-color: transparent;
+    color: black;
+    font-size: 1.2em;
+    font-family: UniSans-Regular, sans-serif;
+}
+
+.message-content .field textarea {
+    min-height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.message-content .buttons {
+    width: 100%;
+    text-align:center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+/* buttons */
+
+.btn-gray {
+   border-radius: 35px; 
+   -moz-border-radius: 35px; 
+   -webkit-border-radius: 35px; 
+   border: 0px;
+   color: #FFFFFF;
+   background-color: #3a4e56;
+   font-size: 1.2em;
+   font-family: 'UniSans-SemiBold', sans-serif;
+   padding: 0.8em 2.5em 0.5em 2.5em;
+}
+
+.btn-gray:active,
+.btn-gray:focus
+ {
+   background-color: #fb5a04;
+}
+
+.btn-red {
+   border-radius: 35px; 
+   -moz-border-radius: 35px; 
+   -webkit-border-radius: 35px; 
+   border: 0px;
+   color: #FFFFFF;
+   background-color: #fb5a04;
+   font-size: 1.2em;
+   font-family: 'UniSans-SemiBold', sans-serif;
+   padding: 0.8em 2.5em 0.5em 2.5em;
+}
+
+/* internet connection popup */
+
+.popup,
+.popup-container.active .popup,
+.popup-container .popup {
+    background-color: #f3f0eb;
+    max-height: 65%;
+}
+
+.popup-container,
+.popup-container.popup-showing,
+.popup-container.active .popup,
+.popup-container .popup,
+.myPopup > .popup { 
+   border-radius: 10px !important; 
+   -moz-border-radius: 10px !important;  
+   -webkit-border-radius: 10px !important;  
+}
+
+.popup .popup-head {
+    border: 0px;
+    color: white;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+.popup .popup-head .popup-title {
+    font-size: 1.4em;
+    color: #313131;
+    padding: 0.5em 0 0.5em 0;
+    font-family: UniSans-Bold, sans-serif;
+    text-align: center;
+}
+
+.popup .popup-head .close-header {
+    width:100%;
+    background-color: #e3e0db;
+    text-align: right;
+    font-family: UniSans-Bold, sans-serif;
+    color: #808080;
+    font-size: 0.4em;
+    padding: 5px;
+    margin-bottom: 20px;
+    /*vertical-align:middle;*/
+}
+
+.popup .popup-head .close-header .close-text {
+    float: left;
+    padding-top:3px;
+    width: 92%;
+}
+
+.popup .popup-head .close-header .close-btn {
+    font-family: UniSans-Bold, sans-serif;
+    color: #808080;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.popup .popup-head .close-header span.close-btn img
+{
+    width: 1.2em;
+}
+
+.popup .popup-body,
+.myPopup > .popup-body {
+    border: 0px;   
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.popup .popup-body span,
+.popup .popup-body p {
+    font-size: 1em;
+    color: #313131;   
+    font-family: UniSans-Regular, sans-serif;
+    text-align: left;
+}
+
+.popup .popup-buttons {
+    background-color: #f3f0eb;
+    border: 0px;
+}
+
+.popup .popup-buttons button {
+    border-radius: 10px; 
+   -moz-border-radius: 10px; 
+   -webkit-border-radius: 10px; 
+   border: 1px solid white;
+   color: #313131 !important;
+   background-color: #f3f0eb;
+   font-size: 1.2em;
+   font-family: UniSans-Regular, sans-serif;
+   padding: 0.5em;
+}
+
+.popup .popup-buttons button.activated {
+   border-radius: 10px; 
+   -moz-border-radius: 10px; 
+   -webkit-border-radius: 10px; 
+   border: 1px solid #b1aa74;
+   color: #313131 !important;
+   background-color: #f3f0eb;
+}

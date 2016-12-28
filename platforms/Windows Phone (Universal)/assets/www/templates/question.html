@@ -1,0 +1,28 @@
+<ion-view  hide-nav-bar="true">  
+  <ion-content > 
+      <div class="header">
+          <img src="images/top-header.png" />
+      </div>
+          <div class="question-content">
+              <h1>{{currentquestion.title}}</h1>
+              <p>{{currentquestion.shortdesc}}</p>
+              <div class="clear"></div>
+              <div class="answers-list">
+                  <ion-list>
+                      <ion-item ng-repeat="a in currentquestion.answers">
+                          <table>
+                              <tr>
+                                  <td><input type=checkbox /></td>
+                                  <td>{{a.title}}</td>
+                              </tr>
+                          </table>
+                      </ion-item>
+                  </ion-list>
+              </div>
+              <div class="clear"></div>
+              <div class="buttons">
+                  <button class="btn-red" ng-click="btnClick()">NEXT QUESTION</button>
+              </div>
+          </div>
+</ion-content>
+</ion-view>

@@ -1,0 +1,30 @@
+<ion-view  hide-nav-bar="true">  
+  <ion-content > 
+      <div class="header">
+          <img src="images/top-header.png" />
+      </div>
+          <div class="question-content">
+              <h1>{{currentquestion.title}}</h1>
+              <p>{{currentquestion.shortdesc}}</p>
+              <div class="clear"></div>
+              <form name="questionsForm" ng-submit="btnClick()" >
+                  <div class="answers-item" ng-repeat="a in currentquestion.answers">
+                      <table ng-class="(selectedAnswer==$index)? 'answer blue' : 'answer'" ng-click="answerClicked($index)">
+                          <tr>
+                              <td class="answer-radio">
+                                  <input type="radio" name="rb{{index}}" id="group{{index}}-{{a.id}}" value="{{a.id}}" />
+                              </td>
+                              <td class="answer-label">
+                                  <label for="group{{index}}-{{a.id}}">{{a.title}}</label>
+                              </td>
+                          </tr>
+                      </table>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="buttons">
+                      <button type="submit" class="btn-gray" >{{ (index < allquestions.length-1)? "NEXT QUESTION" : "FINISH" }}</button>
+                  </div>
+              </form>
+          </div>
+</ion-content>
+</ion-view>
